@@ -1,0 +1,9 @@
+aws_region       = "us-east-1"
+instance_type    = "m6i.xlarge"
+root_volume_size = 40
+
+vpc_cidr    = "10.60.0.0/16"
+subnet_cidr = "10.60.1.0/24"
+
+# Set after the first deployment to reproduce the same AMI.
+# ami_id = "ami-xxxxxxxxxxxxxxxxx"
