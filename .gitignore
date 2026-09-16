@@ -1,0 +1,52 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+terraform.tfvars
+*.auto.tfvars
+
+# Terraform local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Hugging Face / model cache
+.cache/
+huggingface/
+models/
+*.safetensors
+
+# Benchmark artifacts
+results/*.csv
+results/*.json
+results/*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
