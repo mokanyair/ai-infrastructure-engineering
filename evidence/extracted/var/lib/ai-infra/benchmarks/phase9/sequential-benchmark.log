@@ -1,0 +1,78 @@
+Loading tokenizer...
+Loading model...
+Input tokens: 39
+Running warm-up requests...
+Warm-up 1: 9.9371 s
+Warm-up 2: 9.8138 s
+Running measured requests...
+Run 1: 9.8331 s | 6.5086 tokens/s
+Run 2: 9.8751 s | 6.4809 tokens/s
+Run 3: 9.8318 s | 6.5095 tokens/s
+Run 4: 9.7431 s | 6.5688 tokens/s
+Run 5: 9.8026 s | 6.5289 tokens/s
+
+========== BENCHMARK SUMMARY ==========
+{
+  "phase": "9.3",
+  "timestamp_utc": "2026-09-17T22:51:48.024775+00:00",
+  "hostname": "ip-10-60-1-139.ec2.internal",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "cpu_threads": 4,
+  "input_tokens": 39,
+  "max_new_tokens": 64,
+  "warmup_runs": 2,
+  "measured_runs": 5,
+  "mean_latency_seconds": 9.8171,
+  "median_latency_seconds": 9.8318,
+  "min_latency_seconds": 9.7431,
+  "max_latency_seconds": 9.8751,
+  "mean_tokens_per_second": 6.5193,
+  "measurements": [
+    {
+      "latency_seconds": 9.8331,
+      "output_tokens": 64,
+      "tokens_per_second": 6.5086,
+      "process_rss_mib": 4531.67,
+      "response_nonempty": true,
+      "run": 1
+    },
+    {
+      "latency_seconds": 9.8751,
+      "output_tokens": 64,
+      "tokens_per_second": 6.4809,
+      "process_rss_mib": 4531.68,
+      "response_nonempty": true,
+      "run": 2
+    },
+    {
+      "latency_seconds": 9.8318,
+      "output_tokens": 64,
+      "tokens_per_second": 6.5095,
+      "process_rss_mib": 4531.69,
+      "response_nonempty": true,
+      "run": 3
+    },
+    {
+      "latency_seconds": 9.7431,
+      "output_tokens": 64,
+      "tokens_per_second": 6.5688,
+      "process_rss_mib": 4534.45,
+      "response_nonempty": true,
+      "run": 4
+    },
+    {
+      "latency_seconds": 9.8026,
+      "output_tokens": 64,
+      "tokens_per_second": 6.5289,
+      "process_rss_mib": 4534.46,
+      "response_nonempty": true,
+      "run": 5
+    }
+  ]
+}
+
+Saved JSON: /var/lib/ai-infra/benchmarks/phase9/sequential-benchmark.json
+Saved CSV: /var/lib/ai-infra/benchmarks/phase9/sequential-benchmark.csv

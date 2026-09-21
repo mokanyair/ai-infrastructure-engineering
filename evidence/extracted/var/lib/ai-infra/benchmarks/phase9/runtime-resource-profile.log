@@ -1,0 +1,82 @@
+Loading tokenizer...
+Loading model...
+Input tokens: 39
+Running one warm-up...
+Running measured resource-profile requests...
+Run 1: 10.0105 s | 6.3933 tok/s | CPU normalized mean=99.55% | RSS peak=4526.77 MiB
+Run 2: 9.9654 s | 6.4222 tok/s | CPU normalized mean=99.08% | RSS peak=4526.89 MiB
+Run 3: 9.9931 s | 6.4044 tok/s | CPU normalized mean=99.36% | RSS peak=4526.93 MiB
+
+========== RESOURCE PROFILE SUMMARY ==========
+{
+  "phase": "9.4",
+  "measurement": "runtime_resource_profile",
+  "timestamp_utc": "2026-09-17T23:00:53.761844+00:00",
+  "hostname": "ip-10-60-1-139.ec2.internal",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "logical_cpus": 4,
+  "torch_threads": 4,
+  "input_tokens": 39,
+  "max_new_tokens": 64,
+  "warmup_runs": 1,
+  "measured_runs": 3,
+  "sample_interval_target_seconds": 0.2,
+  "mean_latency_seconds": 9.9897,
+  "mean_tokens_per_second": 6.4066,
+  "mean_process_cpu_percent_normalized": 99.33,
+  "peak_process_cpu_percent_normalized": 103.65,
+  "peak_process_rss_mib": 4526.93,
+  "runs": [
+    {
+      "run": 1,
+      "latency_seconds": 10.0105,
+      "output_tokens": 64,
+      "tokens_per_second": 6.3933,
+      "sample_count": 50,
+      "mean_process_cpu_percent_raw": 398.18,
+      "peak_process_cpu_percent_raw": 414.4,
+      "mean_process_cpu_percent_normalized": 99.55,
+      "peak_process_cpu_percent_normalized": 103.6,
+      "mean_host_cpu_percent": 99.42,
+      "peak_host_cpu_percent": 100.0,
+      "mean_process_rss_mib": 4526.75,
+      "peak_process_rss_mib": 4526.77
+    },
+    {
+      "run": 2,
+      "latency_seconds": 9.9654,
+      "output_tokens": 64,
+      "tokens_per_second": 6.4222,
+      "sample_count": 50,
+      "mean_process_cpu_percent_raw": 396.32,
+      "peak_process_cpu_percent_raw": 414.6,
+      "mean_process_cpu_percent_normalized": 99.08,
+      "peak_process_cpu_percent_normalized": 103.65,
+      "mean_host_cpu_percent": 99.09,
+      "peak_host_cpu_percent": 100.0,
+      "mean_process_rss_mib": 4526.88,
+      "peak_process_rss_mib": 4526.89
+    },
+    {
+      "run": 3,
+      "latency_seconds": 9.9931,
+      "output_tokens": 64,
+      "tokens_per_second": 6.4044,
+      "sample_count": 50,
+      "mean_process_cpu_percent_raw": 397.42,
+      "peak_process_cpu_percent_raw": 409.7,
+      "mean_process_cpu_percent_normalized": 99.36,
+      "peak_process_cpu_percent_normalized": 102.42,
+      "mean_host_cpu_percent": 99.33,
+      "peak_host_cpu_percent": 100.0,
+      "mean_process_rss_mib": 4526.92,
+      "peak_process_rss_mib": 4526.93
+    }
+  ]
+}
+
+Saved JSON: /var/lib/ai-infra/benchmarks/phase9/runtime-resource-profile.json
+Saved samples: /var/lib/ai-infra/benchmarks/phase9/runtime-resource-samples.csv

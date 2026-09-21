@@ -1,0 +1,26 @@
+Starting memory monitoring...
+Loading pinned model...
+
+========== MODEL LOAD PROFILE ==========
+{
+  "phase": "9.2",
+  "measurement": "model_initialization",
+  "timestamp_utc": "2026-09-17T22:42:09.411335+00:00",
+  "hostname": "ip-10-60-1-139.ec2.internal",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "cpu_threads": 4,
+  "sample_interval_target_seconds": 0.05,
+  "sample_count": 15,
+  "model_load_seconds": 0.7181,
+  "rss_before_model_mib": 283.17,
+  "rss_after_model_mib": 4484.35,
+  "observed_peak_rss_mib": 6212.02,
+  "observed_peak_rss_delta_mib": 5928.85,
+  "host_available_after_mib": 10785.64
+}
+
+Saved JSON: /var/lib/ai-infra/benchmarks/phase9/model-load-profile.json
+Saved CSV: /var/lib/ai-infra/benchmarks/phase9/model-load-samples.csv

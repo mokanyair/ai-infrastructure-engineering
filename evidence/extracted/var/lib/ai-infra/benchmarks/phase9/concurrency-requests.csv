@@ -1,0 +1,8 @@
+request_id,output_tokens,latency_seconds,effective_output_tokens_per_second,success,concurrency
+1,64,9.8509,6.4969,True,1
+2,64,18.8375,3.3975,True,2
+1,64,18.8816,3.3895,True,2
+2,64,34.1497,1.8741,True,4
+3,64,34.1903,1.8719,True,4
+1,64,34.295,1.8662,True,4
+4,64,34.3153,1.8651,True,4

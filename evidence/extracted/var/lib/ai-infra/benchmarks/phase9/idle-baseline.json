@@ -1,0 +1,50 @@
+{
+  "phase": "9.1",
+  "measurement": "idle_host_baseline",
+  "timestamp_utc": "2026-09-17T22:31:54.743368+00:00",
+  "hostname": "ip-10-60-1-139.ec2.internal",
+  "cpu_logical_count": 4,
+  "cpu_physical_count": 2,
+  "total_memory_mib": 15705.5,
+  "sample_interval_seconds": 2,
+  "sample_count": 5,
+  "average_cpu_percent": 0.0,
+  "average_memory_percent": 3.28,
+  "samples": [
+    {
+      "sample": 1,
+      "cpu_percent": 0.0,
+      "memory_used_mib": 532.1,
+      "memory_available_mib": 15173.39,
+      "memory_percent": 3.4
+    },
+    {
+      "sample": 2,
+      "cpu_percent": 0.0,
+      "memory_used_mib": 523.04,
+      "memory_available_mib": 15182.46,
+      "memory_percent": 3.3
+    },
+    {
+      "sample": 3,
+      "cpu_percent": 0.0,
+      "memory_used_mib": 516.09,
+      "memory_available_mib": 15189.4,
+      "memory_percent": 3.3
+    },
+    {
+      "sample": 4,
+      "cpu_percent": 0.0,
+      "memory_used_mib": 507.0,
+      "memory_available_mib": 15198.5,
+      "memory_percent": 3.2
+    },
+    {
+      "sample": 5,
+      "cpu_percent": 0.0,
+      "memory_used_mib": 506.33,
+      "memory_available_mib": 15199.17,
+      "memory_percent": 3.2
+    }
+  ]
+}

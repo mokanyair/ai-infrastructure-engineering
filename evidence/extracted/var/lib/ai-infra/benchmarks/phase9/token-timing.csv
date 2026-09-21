@@ -1,0 +1,6 @@
+input_tokens,output_tokens,ttft_seconds,decode_tokens,decode_seconds,pure_decode_tokens_per_second,end_to_end_latency_seconds,effective_output_tokens_per_second,stopped_at_eos,peak_process_rss_mib,run
+39,64,0.5815,63,8.9584,7.0325,9.5399,6.7087,False,4540.67,1
+39,64,0.5889,63,8.8071,7.1533,9.396,6.8114,False,4540.68,2
+39,64,0.5917,63,8.8349,7.1308,9.4266,6.7893,False,4540.68,3
+39,64,0.5907,63,8.8789,7.0955,9.4697,6.7584,False,4540.7,4
+39,64,0.607,63,9.0144,6.9888,9.6214,6.6518,False,4540.71,5

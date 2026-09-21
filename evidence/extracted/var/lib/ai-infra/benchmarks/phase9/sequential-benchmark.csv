@@ -1,0 +1,6 @@
+latency_seconds,output_tokens,tokens_per_second,process_rss_mib,response_nonempty,run
+9.8331,64,6.5086,4531.67,True,1
+9.8751,64,6.4809,4531.68,True,2
+9.8318,64,6.5095,4531.69,True,3
+9.7431,64,6.5688,4534.45,True,4
+9.8026,64,6.5289,4534.46,True,5

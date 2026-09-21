@@ -1,0 +1,96 @@
+{
+  "phase": "9.7",
+  "timestamp_utc": "2026-09-18T03:26:57.113738+00:00",
+  "hostname": "ip-10-60-1-139.ec2.internal",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "device": "cpu",
+  "precision": "float32",
+  "torch_threads": 4,
+  "warmups": 2,
+  "measured_runs": 5,
+  "max_new_tokens": 64,
+  "method": "Manual greedy decoding with KV-cache reuse. First forward pass processes full prompt; subsequent passes process one token.",
+  "summary": {
+    "mean_ttft_seconds": 0.592,
+    "median_ttft_seconds": 0.5907,
+    "mean_pure_decode_tokens_per_second": 7.0802,
+    "mean_decode_seconds": 8.8987,
+    "mean_end_to_end_latency_seconds": 9.4907,
+    "mean_effective_output_tokens_per_second": 6.7439,
+    "output_tokens_per_run": [
+      64,
+      64,
+      64,
+      64,
+      64
+    ]
+  },
+  "runs": [
+    {
+      "input_tokens": 39,
+      "output_tokens": 64,
+      "ttft_seconds": 0.5815,
+      "decode_tokens": 63,
+      "decode_seconds": 8.9584,
+      "pure_decode_tokens_per_second": 7.0325,
+      "end_to_end_latency_seconds": 9.5399,
+      "effective_output_tokens_per_second": 6.7087,
+      "stopped_at_eos": false,
+      "peak_process_rss_mib": 4540.67,
+      "run": 1
+    },
+    {
+      "input_tokens": 39,
+      "output_tokens": 64,
+      "ttft_seconds": 0.5889,
+      "decode_tokens": 63,
+      "decode_seconds": 8.8071,
+      "pure_decode_tokens_per_second": 7.1533,
+      "end_to_end_latency_seconds": 9.396,
+      "effective_output_tokens_per_second": 6.8114,
+      "stopped_at_eos": false,
+      "peak_process_rss_mib": 4540.68,
+      "run": 2
+    },
+    {
+      "input_tokens": 39,
+      "output_tokens": 64,
+      "ttft_seconds": 0.5917,
+      "decode_tokens": 63,
+      "decode_seconds": 8.8349,
+      "pure_decode_tokens_per_second": 7.1308,
+      "end_to_end_latency_seconds": 9.4266,
+      "effective_output_tokens_per_second": 6.7893,
+      "stopped_at_eos": false,
+      "peak_process_rss_mib": 4540.68,
+      "run": 3
+    },
+    {
+      "input_tokens": 39,
+      "output_tokens": 64,
+      "ttft_seconds": 0.5907,
+      "decode_tokens": 63,
+      "decode_seconds": 8.8789,
+      "pure_decode_tokens_per_second": 7.0955,
+      "end_to_end_latency_seconds": 9.4697,
+      "effective_output_tokens_per_second": 6.7584,
+      "stopped_at_eos": false,
+      "peak_process_rss_mib": 4540.7,
+      "run": 4
+    },
+    {
+      "input_tokens": 39,
+      "output_tokens": 64,
+      "ttft_seconds": 0.607,
+      "decode_tokens": 63,
+      "decode_seconds": 9.0144,
+      "pure_decode_tokens_per_second": 6.9888,
+      "end_to_end_latency_seconds": 9.6214,
+      "effective_output_tokens_per_second": 6.6518,
+      "stopped_at_eos": false,
+      "peak_process_rss_mib": 4540.71,
+      "run": 5
+    }
+  ]
+}

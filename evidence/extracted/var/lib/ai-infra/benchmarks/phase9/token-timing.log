@@ -1,0 +1,31 @@
+Loading tokenizer...
+Loading model...
+Input tokens: 39
+Warm-ups: 2; measured runs: 5
+Warm-up 1: complete
+Warm-up 2: complete
+Run 1: TTFT=0.5815 s | decode=7.0325 tok/s | latency=9.5399 s
+Run 2: TTFT=0.5889 s | decode=7.1533 tok/s | latency=9.396 s
+Run 3: TTFT=0.5917 s | decode=7.1308 tok/s | latency=9.4266 s
+Run 4: TTFT=0.5907 s | decode=7.0955 tok/s | latency=9.4697 s
+Run 5: TTFT=0.607 s | decode=6.9888 tok/s | latency=9.6214 s
+
+========== PHASE 9.7 SUMMARY ==========
+{
+  "mean_ttft_seconds": 0.592,
+  "median_ttft_seconds": 0.5907,
+  "mean_pure_decode_tokens_per_second": 7.0802,
+  "mean_decode_seconds": 8.8987,
+  "mean_end_to_end_latency_seconds": 9.4907,
+  "mean_effective_output_tokens_per_second": 6.7439,
+  "output_tokens_per_run": [
+    64,
+    64,
+    64,
+    64,
+    64
+  ]
+}
+
+Saved: /var/lib/ai-infra/benchmarks/phase9/token-timing.json
+Saved: /var/lib/ai-infra/benchmarks/phase9/token-timing.csv
