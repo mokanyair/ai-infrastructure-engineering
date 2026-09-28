@@ -1,0 +1,4 @@
+precision,batch_size,run,latency_seconds,input_tokens_total,output_tokens_total,output_tokens_per_second,requests_per_second,allocated_mib,reserved_mib,max_allocated_mib,max_reserved_mib
+fp16,4,1,1.4614,212,256,175.1709,2.737,2108.31,2224.0,2123.06,2224.0
+fp16,4,2,1.4641,212,256,174.8554,2.7321,2108.31,2224.0,2123.06,2224.0
+fp16,4,3,1.4576,212,256,175.6304,2.7442,2108.31,2224.0,2123.06,2224.0

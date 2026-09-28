@@ -1,0 +1,33 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+======================================================================
+WEEK 2 GPU WORKLOAD-SHAPE BENCHMARK
+======================================================================
+Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+Revision: fe8a4ea1ffedaf415f4da2f062534de366a451e6
+Precision: fp16
+GPU: Tesla T4
+Batch sizes: [1]
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:   1%|          | 2/201 [00:00<00:18, 10.53it/s]Loading weights:  24%|██▍       | 49/201 [00:00<00:00, 207.08it/s]Loading weights:  38%|███▊      | 77/201 [00:00<00:00, 217.89it/s]Loading weights:  51%|█████     | 103/201 [00:00<00:00, 213.29it/s]Loading weights:  65%|██████▍   | 130/201 [00:00<00:00, 218.81it/s]Loading weights:  78%|███████▊  | 157/201 [00:00<00:00, 217.84it/s]Loading weights:  92%|█████████▏| 184/201 [00:00<00:00, 217.28it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 213.09it/s]
+[transformers] Both `max_new_tokens` (=64) and `max_length`(=2048) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=64) and `max_length`(=2048) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=64) and `max_length`(=2048) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=64) and `max_length`(=2048) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+Tokenizer load: 0.235s
+Model load: 1.990s
+GPU allocated after model load: 2100.18 MiB
+
+--- Batch size 1 ---
+Starting synchronized telemetry: /home/ssm-user/ai-infrastructure-engineering/week02-gpu-architecture/results/rerun-synchronized/gpu_monitor_fp16_batch1.csv
+run=1 latency=1.3579s tokens/s=47.1306 peak_vram=2111.99 MiB
+run=2 latency=1.383s tokens/s=46.2759 peak_vram=2111.99 MiB
+run=3 latency=1.3745s tokens/s=46.5609 peak_vram=2111.99 MiB
+Stopped synchronized telemetry: /home/ssm-user/ai-infrastructure-engineering/week02-gpu-architecture/results/rerun-synchronized/gpu_monitor_fp16_batch1.csv
+mean latency: 1.3718 seconds
+mean tokens/sec: 46.6558
+
+======================================================================
+RESULTS
+======================================================================
+JSON: /home/ssm-user/ai-infrastructure-engineering/week02-gpu-architecture/results/rerun-synchronized/benchmark_fp16.json
+CSV : /home/ssm-user/ai-infrastructure-engineering/week02-gpu-architecture/results/rerun-synchronized/benchmark_fp16.csv

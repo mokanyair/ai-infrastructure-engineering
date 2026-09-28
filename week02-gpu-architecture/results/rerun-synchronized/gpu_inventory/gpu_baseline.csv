@@ -1,0 +1,2 @@
+timestamp, name, uuid, driver_version, pci.bus_id, pstate, memory.total [MiB], memory.used [MiB], memory.free [MiB], utilization.gpu [%], utilization.memory [%], temperature.gpu, power.draw [W], power.limit [W]
+2026/09/28 18:16:10.898, Tesla T4, GPU-df931feb-d90f-bbc8-b3ff-0ffb3a52ed53, 595.91.07, 00000000:00:1E.0, P0, 15360 MiB, 0 MiB, 14913 MiB, 0 %, 0 %, 35, 35.65 W, 70.00 W

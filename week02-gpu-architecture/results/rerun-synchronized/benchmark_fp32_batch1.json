@@ -1,0 +1,77 @@
+{
+  "experiment": "week02-gpu-workload-shape",
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "precision": "fp32",
+  "max_new_tokens": 64,
+  "warmup_runs": 1,
+  "measured_runs": 3,
+  "tokenizer_load_seconds": 0.2453,
+  "model_load_seconds": 2.6867,
+  "rss_before_model_mib": 678.58,
+  "rss_after_model_mib": 908.57,
+  "gpu_memory_after_model_load": {
+    "allocated_mib": 4196.35,
+    "reserved_mib": 4198.0,
+    "max_allocated_mib": 4196.35,
+    "max_reserved_mib": 4198.0
+  },
+  "system": {
+    "timestamp_utc": "2026-09-28T18:33:16.458633+00:00",
+    "hostname": "ip-10-20-20-18",
+    "python": "3.10.12",
+    "pytorch": "2.14.0+cu130",
+    "pytorch_cuda_runtime": "13.0",
+    "cuda_available": true,
+    "gpu_name": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_vram_gib": 14.56,
+    "gpu_sm_count": 40,
+    "cpu_logical": 4,
+    "system_ram_gib": 15.42
+  },
+  "results": [
+    {
+      "batch_size": 1,
+      "latency_seconds": 1.336,
+      "input_tokens_total": 53,
+      "output_tokens_total": 64,
+      "output_tokens_per_second": 47.9028,
+      "requests_per_second": 0.7485,
+      "allocated_mib": 4204.48,
+      "reserved_mib": 4224.0,
+      "max_allocated_mib": 4211.86,
+      "max_reserved_mib": 4224.0,
+      "run": 1,
+      "precision": "fp32"
+    },
+    {
+      "batch_size": 1,
+      "latency_seconds": 1.3336,
+      "input_tokens_total": 53,
+      "output_tokens_total": 64,
+      "output_tokens_per_second": 47.989,
+      "requests_per_second": 0.7498,
+      "allocated_mib": 4204.48,
+      "reserved_mib": 4224.0,
+      "max_allocated_mib": 4211.86,
+      "max_reserved_mib": 4224.0,
+      "run": 2,
+      "precision": "fp32"
+    },
+    {
+      "batch_size": 1,
+      "latency_seconds": 1.332,
+      "input_tokens_total": 53,
+      "output_tokens_total": 64,
+      "output_tokens_per_second": 48.0492,
+      "requests_per_second": 0.7508,
+      "allocated_mib": 4204.48,
+      "reserved_mib": 4224.0,
+      "max_allocated_mib": 4211.86,
+      "max_reserved_mib": 4224.0,
+      "run": 3,
+      "precision": "fp32"
+    }
+  ]
+}
