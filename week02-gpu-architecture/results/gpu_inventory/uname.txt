@@ -1,0 +1,1 @@
+Linux ip-10-20-20-50 6.8.0-1064-aws #67~22.04.1-Ubuntu SMP Mon Aug 17 22:13:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux

@@ -1,0 +1,3 @@
+00:01.3 Non-VGA unclassified device: Intel Corporation 82371AB/EB/MB PIIX4 ACPI (rev 08)
+00:03.0 VGA compatible controller: Amazon.com, Inc. Device 1111
+00:1e.0 3D controller: NVIDIA Corporation TU104GL [Tesla T4] (rev a1)
