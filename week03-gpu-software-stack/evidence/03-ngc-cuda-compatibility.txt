@@ -1,0 +1,31 @@
+===== WEEK 3 - NGC CUDA RUNTIME COMPATIBILITY =====
+
+HOST
+GPU: NVIDIA A10G
+NVIDIA Driver: 595.91.07
+Driver-reported CUDA compatibility: 13.2
+
+NGC CONTAINER 1
+Image: nvcr.io/nvidia/pytorch:24.12-py3
+PyTorch: 2.6.0a0+df5bbc09d1.nv24.12
+CUDA Runtime: 12.6
+CUDA Available: True
+GPU: NVIDIA A10G
+GPU Count: 1
+
+NGC CONTAINER 2
+Image: nvcr.io/nvidia/pytorch:25.11-py3
+PyTorch: 2.10.0a0+b558c986e8.nv25.11
+CUDA Runtime: 13.0
+CUDA Available: True
+GPU: NVIDIA A10G
+GPU Count: 1
+
+RESULT
+PASS - Both CUDA 12.6 and CUDA 13.0 PyTorch container environments
+successfully accessed the same NVIDIA A10G through the same host
+NVIDIA 595.91.07 driver.
+
+KEY OBSERVATION
+The CUDA compatibility level reported by nvidia-smi is not the same
+thing as the CUDA runtime packaged with an application/container.
